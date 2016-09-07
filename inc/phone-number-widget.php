@@ -223,7 +223,7 @@ class mttr_phone_number_widget extends WP_Widget {
 		echo $args['before_widget'];
 
 			// Output widget title
-			echo !empty( $instance['title'] ) ? $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'] : 'New title';
+			echo !empty( $instance['title'] ) ? $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'] : '';
 			
 			// Output phone number
 			echo mttr_phone_number_output::render_phone_number();
